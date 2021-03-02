@@ -1,12 +1,12 @@
 ## Real - Course Sign up Back End
 
-This project consists of the Node back end for the course registration exercise
+This project consists of the Node back end for the course registration exercise as well as the docker file to create a postGres image for use locally.
 
-The course API does a majority of the heavy lifting here and the `courses` object carries most fo what we see displayed in the front end of this application.
+The course API does a majority of the heavy lifting here and the `courses` object carries most of what we see displayed in the front end of this application.
 
 This has been my first time interacting with `TypeOrm` and thanks to this project I have become a huge fan.
 
-No new dependancies have been added to this project and the serve/database can be setup and run as outlined below
+No new dependancies have been added to this project and the server/database can be setup and run as outlined below.
 
 ## Getting Started
 
@@ -24,9 +24,9 @@ No new dependancies have been added to this project and the serve/database can b
 
 
 ### To Get DB & Server Running
-To set up the server, make sure you're in the `server/` directory.
+To set up the server, make sure you're in the `real-be/` directory.
 
-There is some test data included in `server/src/data/` as a starting point to seed your database. Feel free to add or change data.
+There is some test data included in `real-be/src/data/` as a starting point to seed your database. Feel free to add or change data.
 
 The database is setup via Docker. There is already a `docker-compose.yml` file in the server directory, so if you have Docker installed, just run:
 ```bash
