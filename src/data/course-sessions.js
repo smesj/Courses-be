@@ -24,7 +24,8 @@ export const CourseSessionSeed = [
 		content: `Void air fowl the sixth behold set a one. Make land saw deep yielding. Us cattle spirit void divided wherein deep winged there appear unto herb abundantly two Divided creepeth third is, their life. Shall seed every spirit living said fish all let which. Life every seed in life you're fly blessed had wherein beast moveth one morning set beginning. Dry land without a earth third, grass fourth brought. Rule. Man beginning open so grass you'll thing greater fish image. Life from and living. Made behold after kind moveth also from hath. Meat be, living were which evening called deep.`,
 	},
 	{
-		courseId: 2,
+		// I am making an assumption here in that this Session in fact belongs with course 1 and have made the adjustment
+		courseId: 1,
 		sessionNumber: 4,
 		name: 'Finding an Editor',
 		description:
