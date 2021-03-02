@@ -14,10 +14,18 @@ export class CourseService {
 
     // move to section service?
     
-    async registerUserForSection(userId: string, courseSectionId: string) {
+    async enrollUserForSection(userId: number, courseSectionId: number) {
         const section = await this.sectionRepo.findOne(courseSectionId)
         const user = await this.userRepo.findOne(userId, {relations:["courseSections"]});
         user.courseSections = [...user.courseSections, section]
+        return this.userRepo.save(user)
+    }
+
+    async unenrollUserForSection(userId: number, courseSectionId: number) {
+        const user = await this.userRepo.findOne(userId, {relations:["courseSections"]});
+        console.log(courseSectionId)
+        user.courseSections = user.courseSections.filter(el => el.id !== courseSectionId)
+        console.log(user)
         return this.userRepo.save(user)
     }
 }
