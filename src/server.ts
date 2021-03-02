@@ -1,10 +1,11 @@
 import 'reflect-metadata';
 
 import * as bodyParser from 'body-parser';
-
-import { CourseRoutes, UserRoutes } from './routes/user.routes';
+import { UserRoutes } from './routes/user.routes';
+import { CourseRoutes } from './routes/course.routes';
 import { createConnection } from 'typeorm';
 import express from 'express';
+
 
 createConnection().then(async (connection) => {
 	const app = express();
