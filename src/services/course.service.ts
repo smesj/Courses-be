@@ -9,10 +9,8 @@ export class CourseService {
     private userRepo = getRepository(User);
 
 	async all() {
-		return this.courseRepo.find({relations:['courseSections', 'courseSections.users']});
+		return this.courseRepo.find({relations:['courseSections', 'courseSections.users', 'courseSessions']});
 	}
-
-    // move to section service?
     
     async enrollUserForSection(userId: number, courseSectionId: number) {
         const section = await this.sectionRepo.findOne(courseSectionId)
