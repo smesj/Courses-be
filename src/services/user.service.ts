@@ -11,6 +11,7 @@ export class UserService {
 	async findOrCreate(newUser: any) {
 		const users = await this.userRepository.find({
 			where: { email: newUser.email },
+			relations:['courseSections']
 		});
 		if (!!users.length) {
 			return users[0];
