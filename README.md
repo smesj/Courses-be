@@ -6,7 +6,9 @@ The course API does a majority of the heavy lifting here and the `courses` objec
 
 This has been my first time interacting with `TypeOrm` and thanks to this project I have become a huge fan.
 
-No new dependancies have been added to this project and the server/database can be setup and run as outlined below.
+An improvement left to make here would be much more robust typing, though this concept falls into the Typescript knowledge realm and focus was put on concepts and functionality.
+
+No new dependencies have been added to this project and the server/database can be setup and run as outlined below.
 
 ## Getting Started
 
