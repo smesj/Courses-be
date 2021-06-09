@@ -1,14 +1,8 @@
 ## Real - Course Sign up Back End
 
-This project consists of the Node back end for the course registration exercise as well as the docker file to create a postGres image for use locally.
+This project consists of the Node back end for the course registration application as well as the docker file to create a postGres image for use locally.
 
 The course API does a majority of the heavy lifting here and the `courses` object carries most of what we see displayed in the front end of this application.
-
-This has been my first time interacting with `TypeOrm` and thanks to this project I have become a huge fan.
-
-An improvement left to make here would be much more robust typing, though this concept falls into the Typescript knowledge realm and focus was put on concepts and functionality.
-
-No new dependencies have been added to this project and the server/database can be setup and run as outlined below.
 
 ## Getting Started
 
